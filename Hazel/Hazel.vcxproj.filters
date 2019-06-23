@@ -136,8 +136,21 @@
     <None Include="vendor\spdlog\INSTALL" />
     <None Include="vendor\spdlog\LICENSE" />
     <None Include="vendor\spdlog\README.md" />
+    <None Include="vendor\spdlog\bench\mem" />
+    <None Include="vendor\spdlog\cmake\ide.cmake" />
+    <None Include="vendor\spdlog\cmake\spdlogConfig.cmake.in" />
+    <None Include="vendor\spdlog\cmake\spdlogCPack.cmake" />
+    <None Include="vendor\spdlog\cmake\utils.cmake" />
+    <None Include="vendor\spdlog\cygwin\CPackConfig.cmake" />
+    <None Include="vendor\spdlog\cygwin\CPackSourceConfig.cmake" />
+    <None Include="vendor\spdlog\cygwin\spdlogConfig.cmake" />
+    <None Include="vendor\spdlog\cygwin\spdlogConfigVersion.cmake" />
+    <None Include="vendor\spdlog\tests\catch.license" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="vendor\spdlog\CMakeLists.txt" />
+    <Text Include="vendor\spdlog\bench\CMakeLists.txt" />
+    <Text Include="vendor\spdlog\example\CMakeLists.txt" />
+    <Text Include="vendor\spdlog\tests\CMakeLists.txt" />
   </ItemGroup>
 </Project>
