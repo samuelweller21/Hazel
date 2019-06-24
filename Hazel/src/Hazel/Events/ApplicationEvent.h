@@ -2,10 +2,7 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Hazel {
-
 
 	class HAZEL_API WindowResizeEvent : public Event
 	{
@@ -13,7 +10,7 @@ namespace Hazel {
 		WindowResizeEvent(unsigned int width, unsigned int height)
 			: m_Width(width), m_Height(height) {}
 
-		inline unsigned int GetWidth() const { return m_Wdith; }
+		inline unsigned int GetWidth() const { return m_Width; }
 		inline unsigned int GetHeight() const { return m_Height; }
 
 		std::string ToString() const override
@@ -30,7 +27,7 @@ namespace Hazel {
 		unsigned int m_Width, m_Height;
 	};
 
-	class HAZEL_API WindowCloseEvent : pubic Event
+	class HAZEL_API WindowCloseEvent : public Event
 	{
 	public:
 		WindowCloseEvent() {}
@@ -41,7 +38,7 @@ namespace Hazel {
 
 	class HAZEL_API AppTickEvent : public Event
 	{
-		AppTickEvemt() {}
+		AppTickEvent() {}
 
 		EVENT_CLASS_TYPE(AppTick)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
